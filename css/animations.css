@@ -1,0 +1,39 @@
+/* ==========================================================
+   VERV — ANIMATIONS
+   Keyframes and motion-related states only.
+   Kept deliberately subtle: "something is moving, but you
+   barely notice it" — not a showcase of animation.
+   ========================================================== */
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.hero-content>*{opacity:0;animation:riseIn .8s ease forwards}
+.hero-content .verv-mark{animation-delay:.1s}
+.hero-content .slogan{animation-delay:.3s}
+.hero-content .btn{animation-delay:.5s}
+
+@keyframes ledFlicker{0%,94%,100%{opacity:1}96%{opacity:.6}}
+.led{animation:ledFlicker 5s ease-in-out infinite}
+
+/* Layers used for the very subtle parallax (see js/animations.js).
+   Transform is written inline by JS on top of any base transform,
+   so keep transitions short and let JS drive the per-frame value. */
+.archway,.lightwall,.hero-photo{will-change:transform}
+
+/* Product card image crossfade + zoom already defined in main.css;
+   transition durations live there since they're tied to layout,
+   this file only owns keyframes/reveal/parallax plumbing. */
+
+@media (prefers-reduced-motion: reduce){
+  *{scroll-behavior:auto !important}
+  .reveal{opacity:1 !important;transform:none !important;transition:none !important}
+  .hero-content>*{opacity:1 !important;animation:none !important}
+  .led{animation:none !important}
+  .archway,.lightwall,.hero-photo{transform:none !important}
+}
+
+/* Homepage garment rotation */
+.hero-wardrobe.is-switching .wardrobe-card-main{animation:wardrobeSwitch .75s cubic-bezier(.16,1,.3,1) both;}
+@keyframes wardrobeSwitch{0%{opacity:1;transform:translate3d(0,0,0) rotateY(-2deg) scale(1)}45%{opacity:0;transform:translate3d(18px,-4px,35px) rotateY(8deg) scale(.97)}100%{opacity:1;transform:translate3d(0,0,0) rotateY(-2deg) scale(1)}}

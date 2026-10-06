@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VERV — Wear The Energy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/business.css">
+</head>
+<body>
+
+<nav id="top">
+  <a class="brand-logo" href="#top" aria-label="VERV home"><img src="assets/brand/verv-logo.png" alt="VERV"></a>
+  <div class="navlinks">
+    <div class="links">
+      <a href="#dna" data-i18n="DNA">DNA</a>
+      <a href="#business" data-i18n="Business">PRODUCTS</a>
+      <a href="#contact" data-i18n="Contact">Contact</a>
+    </div>
+    <button id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <!-- Drop a real campaign photo at assets/hero/hero.jpg to replace the CSS scene.
+       onerror hides it gracefully if the file isn't there yet. -->
+  <div class="lightwall"></div>
+  <div class="archway"><span class="led"></span></div>
+  <div class="floor-reflect"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-content sketch-hero-content">
+    <h1 class="verv-mark">WEAR<br><em>THE ENERGY.</em></h1>
+    <a href="#business" class="btn hero-cta">EXPLORE VERV</a>
+  </div>
+
+  <div class="sketch-stage" aria-label="Animated VERV fashion sketches">
+    <div class="sketch-grid-line"></div>
+    <div class="sketch-orbit sketch-orbit-a"></div>
+    <div class="sketch-orbit sketch-orbit-b"></div>
+
+    <div class="sketch-item sketch-item-hoodie is-active" data-sketch="hoodie">
+      <svg viewBox="0 0 320 360" role="img" aria-label="VERV hoodie sketch">
+        <g class="sketch-lines">
+          <path pathLength="1" d="M111 91 C99 74 101 49 128 31 C153 15 185 17 201 33 C219 50 218 74 207 91 L244 108 C258 115 270 127 278 144 L303 197 L259 217 L237 175 L242 327 L79 327 L84 175 L62 217 L18 197 L43 144 C51 127 63 115 77 108 Z"/>
+          <path pathLength="1" d="M128 32 C143 59 177 64 201 33"/>
+          <path pathLength="1" d="M121 83 C135 102 179 102 207 83"/>
+          <path pathLength="1" d="M119 221 C147 207 181 207 205 221 L213 250 C184 265 143 265 112 250 Z"/>
+          <path pathLength="1" d="M84 175 C72 193 63 205 54 211"/>
+          <path pathLength="1" d="M237 175 C249 193 260 205 268 211"/>
+        </g>
+        <g class="sketch-accent"><path d="M73 122 L42 176"/><path d="M249 122 L280 176"/><circle cx="226" cy="302" r="3"/></g>
+      </svg>
+      <span class="sketch-caption">HOODIE</span>
+    </div>
+
+    <div class="sketch-item sketch-item-pants" data-sketch="pants">
+      <svg viewBox="0 0 320 360" role="img" aria-label="VERV sweatpants sketch">
+        <g class="sketch-lines">
+          <path pathLength="1" d="M88 38 Q160 24 232 38 L226 94 L215 326 L166 326 L158 193 L151 326 L102 326 L94 94 Z"/>
+          <path pathLength="1" d="M91 48 Q160 65 229 48"/>
+          <path pathLength="1" d="M102 80 Q160 97 218 80"/>
+          <path pathLength="1" d="M94 94 L68 321 L119 321 L151 193"/>
+          <path pathLength="1" d="M226 94 L252 321 L201 321 L169 193"/>
+          <path pathLength="1" d="M118 69 L109 96"/><path pathLength="1" d="M202 69 L211 96"/>
+        </g>
+        <g class="sketch-accent"><path d="M72 320 H117"/><path d="M203 320 H248"/><circle cx="160" cy="59" r="3"/></g>
+      </svg>
+      <span class="sketch-caption">SWEATPANTS</span>
+    </div>
+
+    <div class="sketch-item sketch-item-tee" data-sketch="tee">
+      <svg viewBox="0 0 320 360" role="img" aria-label="VERV T-shirt sketch">
+        <g class="sketch-lines">
+          <path pathLength="1" d="M111 65 L62 88 L24 145 L71 178 L93 145 L88 315 L232 315 L227 145 L249 178 L296 145 L258 88 L209 65 C194 83 126 83 111 65 Z"/>
+          <path pathLength="1" d="M111 65 C123 98 197 98 209 65"/>
+          <path pathLength="1" d="M94 144 L72 175"/><path pathLength="1" d="M226 144 L248 175"/>
+          <path pathLength="1" d="M121 202 C145 190 175 190 199 202"/>
+        </g>
+        <g class="sketch-accent"><path d="M28 146 L62 126"/><path d="M292 146 L258 126"/><circle cx="160" cy="213" r="3"/></g>
+      </svg>
+      <span class="sketch-caption">T-SHIRT</span>
+    </div>
+
+    <div class="sketch-item sketch-item-cap" data-sketch="cap">
+      <svg viewBox="0 0 360 320" role="img" aria-label="VERV cap sketch">
+        <g class="sketch-lines">
+          <path pathLength="1" d="M91 166 C92 111 124 72 174 68 C226 64 263 98 269 153 C253 166 237 176 217 182 C190 164 128 158 91 166 Z"/>
+          <path pathLength="1" d="M91 166 C59 171 34 187 18 207 C77 208 132 198 179 177 C145 163 113 158 91 166 Z"/>
+          <path pathLength="1" d="M106 151 C139 130 216 128 252 150"/>
+          <path pathLength="1" d="M174 68 C176 82 176 94 172 108"/>
+          <path pathLength="1" d="M129 80 C119 99 115 123 118 145"/>
+          <path pathLength="1" d="M218 82 C231 101 237 124 236 145"/>
+        </g>
+        <g class="sketch-accent"><path d="M35 204 C83 202 126 193 159 181"/><path d="M272 151 C286 158 297 166 304 174"/><circle cx="174" cy="112" r="3"/></g>
+      </svg>
+      <span class="sketch-caption">CAP</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="campaign sketch-campaign">
+  <div class="showcase-head reveal">
+    <div class="eyebrow">VERV / OBJECT STUDIES</div>
+    <h2>DRAWN TO MOVE</h2>
+  </div>
+
+  <div class="sketch-products" aria-label="VERV animated garment sketches">
+    <article class="sketch-product-card reveal" data-sketch-card="hoodie">
+      <span class="sketch-index">01</span>
+      <div class="mini-sketch mini-hoodie"><img src="assets/campaign/hodies.png" alt="VERV Hoodie" loading="lazy"></div><div><h3>HOODIE</h3><p>Soft structure / oversized form</p></div>
+    </article>
+
+    <article class="sketch-product-card reveal" data-sketch-card="pants">
+      <span class="sketch-index">02</span>
+      <div class="mini-sketch mini-pants"><img src="assets/campaign/seatpants.png" alt="VERV Sweatpants" loading="lazy"></div><div><h3>SWEATPANTS</h3><p>Relaxed line / clean fall</p></div>
+    </article>
+
+    <article class="sketch-product-card reveal" data-sketch-card="tee">
+      <span class="sketch-index">03</span>
+      <div class="mini-sketch mini-tee"><img src="assets/campaign/tshirt.png" alt="VERV T-Shirt" loading="lazy"></div><div><h3>T-SHIRT</h3><p>Lightweight gesture / sharp shoulder</p></div>
+    </article>
+
+    <article class="sketch-product-card reveal" data-sketch-card="cap">
+      <span class="sketch-index">04</span>
+      <div class="mini-sketch mini-cap"><img src="assets/campaign/cap.png" alt="VERV Cap" loading="lazy"></div><div><h3>CAP</h3><p>Low profile / everyday energy</p></div>
+    </article>
+
+      <article class="sketch-product-card reveal" data-sketch-card="cap">
+      <span class="sketch-index">05</span>
+      <div class="mini-sketch mini-cap"><img src="assets/campaign/jacket.png" alt="VERV Cap" loading="lazy"></div><div><h3>JACKET</h3><p>Easy layer / everyday attitude</p></div>
+    </article>
+
+  </div>
+</section>
+
+
+
+
+<section class="statement">
+  <span class="series-tag">VERV — BRAND SERIES</span><span class="series-num">01</span>
+  <div class="reveal">
+    <div class="num">CONFIDENCE</div>
+    <h2>NOT<br>ARROGANCE.</h2>
+  </div>
+  <div class="reveal">
+    <p>Confidence is not arrogance. It's knowing who you are, and moving like it. Every piece is cut for that mindset — clean, deliberate, unbothered.</p>
+  </div>
+</section>
+
+<section class="statement alt">
+  <span class="series-tag">VERV — BRAND SERIES</span><span class="series-num">02</span>
+  <div class="reveal">
+    <div class="num">ENERGY</div>
+    <h2>STARTS AS<br>A MINDSET.</h2>
+  </div>
+  <div class="reveal">
+    <p>It starts with a mindset, and turns into action. VERV is built for the jump, the walk, the moment you decide to move.</p>
+  </div>
+</section>
+
+<section class="statement">
+  <span class="series-tag">VERV — BRAND SERIES</span><span class="series-num">03</span>
+  <div class="reveal">
+    <div class="num">INDIVIDUALITY</div>
+    <h2>SAME<br>ENERGY.</h2>
+  </div>
+  <div class="reveal">
+    <p>Different minds. Different paths. Same energy. VERV doesn't dress a type — it dresses a frequency.</p>
+  </div>
+</section>
+
+<section class="dna" id="dna">
+  <div class="eyebrow reveal">MORE THAN JUST CLOTHES.</div>
+  <h2 class="reveal">VERV <span>DNA</span></h2>
+  <p class="reveal">IT'S A MINDSET. A MOVEMENT. A LIFESTYLE.</p>
+</section>
+
+
+
+
+<!-- =========================================================
+     VERV BUSINESS — RETAIL & WHOLESALE
+========================================================= -->
+<section class="business" id="business">
+  <div class="business-head reveal">
+    <div>
+      <div class="eyebrow">VERV / BUSINESS</div>
+      <h2>BUILT FOR<br><span>EVERY SCALE.</span></h2>
+    </div>
+    <p>From individual pieces to school, corporate and team orders — choose the way you want to move.</p>
+  </div>
+
+
+
+  <div class="business-switcher" role="tablist" aria-label="Shopping type">
+    <button class="business-tab active" type="button" role="tab" aria-selected="true" aria-controls="retailPanel" data-business-tab="retail">
+      <span class="business-tab-num">01</span>
+      <span class="business-tab-main" data-i18n="RETAIL">RETAIL</span>
+      <span class="business-tab-sub" data-i18n="INDIVIDUAL">INDIVIDUAL PIECES</span>
+    </button>
+    <button class="business-tab" type="button" role="tab" aria-selected="false" aria-controls="wholesalePanel" data-business-tab="wholesale">
+      <span class="business-tab-num">02</span>
+      <span class="business-tab-main" data-i18n="WHOLESALE">WHOLESALE</span>
+      <span class="business-tab-sub" data-i18n="BULK">BULK ORDERS</span>
+    </button>
+  </div>
+
+  <div class="business-panel active" id="retailPanel" role="tabpanel" data-business-panel="retail">
+    <div class="business-panel-head">
+      <div>
+        <span class="eyebrow">01 / RETAIL</span>
+        <h3>SHOP BY PIECE.</h3>
+      </div>
+      <p>Individual pieces with a clear per-item price.</p>
+    </div>
+
+    <!--بداية المنتج-->
+
+    <div class="category-campaign-head">
+      <span class="eyebrow">01 / CATEGORIES</span>
+      <h3>SHOP BY <span>TYPE.</span></h3>
+      <p>Choose a category to explore every available shape and product inside it.</p>
+    </div>
+
+    <!--START-->
+    <div class="category-campaign-grid">
+      <a class="category-campaign" href="category.html?category=tshirts&mode=retail"><img src="assets/products/t-shirt/t-shrit.png" alt="T-Shirts"><span>01</span><strong>T-SHIRTS</strong><small>ROUND / POLO / MORE</small></a>
+      <a class="category-campaign" href="category.html?category=hoodies&mode=retail"><img src="assets/products/hoodie/Hoodie png.png" alt="Hoodies"><span>02</span><strong>HOODIES</strong><small>OVERSIZED / ZIP / MORE</small></a>
+      <a class="category-campaign" href="category.html?category=pants&mode=retail"><img src="assets/products/sweatpants/Sweatpants .png" alt="Pants"><span>03</span><strong>PANTS</strong><small>SWEATPANTS / CARGO / MORE</small></a>
+      <a class="category-campaign" href="category.html?category=jackets&mode=retail"><img src="assets/products/jackets/Jackets.png" alt="Jackets"><span>04</span><strong>JACKETS</strong><small>SHELL / BOMBER / MORE</small></a>
+      <a class="category-campaign" href="category.html?category=crewnecks&mode=retail"><img src="assets/products/crewneck/Neutrals .png" alt="Crewnecks"><span>05</span><strong>CREWNECKS</strong><small>CORE / ENERGY / MORE</small></a>
+    </div>
+
+
+
+    
+  </div>
+
+  <div class="business-panel" id="wholesalePanel" role="tabpanel" data-business-panel="wholesale" hidden>
+    <div class="business-panel-head">
+      <div>
+        <span class="eyebrow">02 / WHOLESALE</span>
+        <h3>BUILT IN BULK.</h3>
+      </div>
+      <p>School uniforms, corporate uniforms, teams and custom apparel — priced by quantity.</p>
+    </div>
+
+    <div class="category-campaign-head wholesale-category-head">
+      <span class="eyebrow">02 / CATEGORIES</span>
+      <h3>WHOLESALE BY <span>TYPE.</span></h3>
+      <p>Open a category, choose the exact product shape, then build your bulk order.</p>
+    </div>
+    <div class="category-campaign-grid">
+      <a class="category-campaign" href="category.html?category=tshirts&mode=wholesale"><img src="assets/products/t-shirt/t-shrit.png" alt="T-Shirts"><span>01</span><strong>T-SHIRTS</strong><small>ROUND / POLO / MORE</small></a>
+      <a class="category-campaign" href="category.html?category=hoodies&mode=wholesale"><img src="assets/products/hoodie/Hoodie png.png" alt="Hoodies"><span>02</span><strong>HOODIES</strong><small>OVERSIZED / ZIP / MORE</small></a>
+      <a class="category-campaign" href="category.html?category=pants&mode=wholesale"><img src="assets/products/sweatpants/Sweatpants .png" alt="Pants"><span>03</span><strong>PANTS</strong><small>SWEATPANTS / CARGO / MORE</small></a>
+      <a class="category-campaign" href="category.html?category=jackets&mode=wholesale"><img src="assets/products/jackets/Jackets.png" alt="Jackets"><span>04</span><strong>JACKETS</strong><small>SHELL / BOMBER / MORE</small></a>
+      <a class="category-campaign" href="category.html?category=crewnecks&mode=wholesale"><img src="assets/products/crewneck/Neutrals .png" alt="Crewnecks"><span>05</span><strong>CREWNECKS</strong><small>CORE / ENERGY / MORE</small></a>
+    </div>
+
+    <div class="wholesale-products">
+      <article class="wholesale-product">
+        <div class="business-product-image wholesale-image"><img src="assets/products/t-shirt/school uniform.png" alt="VERV School Uniform" loading="lazy"></div>
+        <div class="wholesale-content">
+          <div><span class="product-category">BULK / 01</span><h4>SCHOOL UNIFORM</h4><p>Custom school uniforms produced in bulk.</p></div>
+          <div class="price-tiers">
+            <div class="price-tier"><span>30 — 50 PCS</span><strong>300 <small>EGP / PC</small></strong></div>
+            <div class="price-tier"><span>50 — 70 PCS</span><strong>270 <small>EGP / PC</small></strong></div>
+            <div class="price-tier"><span>70 — 100 PCS</span><strong>250 <small>EGP / PC</small></strong></div>
+            <div class="price-tier"><span>100+ PCS</span><strong>230 <small>EGP / PC</small></strong></div>
+          </div>
+          <div class="wholesale-order-box" data-wholesale-order>
+            <div class="wholesale-order-options">
+              <label><span>COLOR</span><select data-wholesale-color><option>Black</option><option>White</option><option>Beige</option><option>Custom</option></select></label>
+              <label><span>SIZE</span><select data-wholesale-size><option>S</option><option>M</option><option>L</option><option>XL</option><option>Mixed Sizes</option></select></label>
+              <label><span>QUANTITY</span><input data-wholesale-qty type="number" min="30" step="1" value="30" inputmode="numeric"></label>
+            </div>
+            <div class="special-request-box" data-special-requests>
+              <div class="special-request-head"><span data-i18n="SPECIAL">SPECIAL REQUESTS</span><small data-i18n="OPTIONAL">OPTIONAL ADD-ONS</small></div>
+              <label class="special-check"><input type="checkbox" data-special="name"><span data-i18n="ADDNAME">ADD NAME</span><strong><b>+100</b><small>EGP / PC</small></strong></label>
+              <div class="special-extra" data-extra="name"><input type="text" data-special-input="name" maxlength="30" placeholder="Name to print"></div>
+              <label class="special-check"><input type="checkbox" data-special="text"><span data-i18n="CUSTOMTEXT">CUSTOM TEXT</span><strong><b>+75</b><small>EGP / PC</small></strong></label>
+              <div class="special-extra" data-extra="text"><input type="text" data-special-input="text" maxlength="60" placeholder="Text to print"></div>
+              <label class="special-check"><input type="checkbox" data-special="logo"><span data-i18n="CUSTOMLOGO">CUSTOM LOGO</span><strong><b>+200</b><small>EGP / PC</small></strong></label>
+              <div class="special-extra" data-extra="logo"><input type="text" data-special-input="logo" maxlength="60" placeholder="Logo / brand name"></div>
+            </div>
+            <button type="button" class="business-quote-btn wholesale-order-btn" data-wholesale-product="SCHOOL UNIFORM" data-min-qty="30">ORDER VIA WHATSAPP</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="wholesale-product">
+        <div class="business-product-image wholesale-image"><img src="assets/products/t-shirt/Medical School Graduation T-shirt .png" alt="VERV Corporate Uniform" loading="lazy"></div>
+        <div class="wholesale-content">
+          <div><span class="product-category">BULK / 02</span><h4>Medical School Graduation T-shirt</h4><p>University and college branded apparel.</p></div>
+          <div class="price-tiers">
+            <div class="price-tier"><span>30 — 50 PCS</span><strong>350 <small>EGP / PC</small></strong></div>
+            <div class="price-tier"><span>50 — 70 PCS</span><strong>320 <small>EGP / PC</small></strong></div>
+            <div class="price-tier"><span>70 — 100 PCS</span><strong>290 <small>EGP / PC</small></strong></div>
+            <div class="price-tier"><span>100+ PCS</span><strong>260 <small>EGP / PC</small></strong></div>
+          </div>
+          <div class="wholesale-order-box" data-wholesale-order>
+            <div class="wholesale-order-options">
+              <label><span>COLOR</span><select data-wholesale-color><option>Black</option><option>White</option><option>Beige</option><option>Custom</option></select></label>
+              <label><span>SIZE</span><select data-wholesale-size><option>S</option><option>M</option><option>L</option><option>XL</option><option>Mixed Sizes</option></select></label>
+              <label><span>QUANTITY</span><input data-wholesale-qty type="number" min="30" step="1" value="30" inputmode="numeric"></label>
+            </div>
+            <div class="special-request-box" data-special-requests>
+              <div class="special-request-head"><span data-i18n="SPECIAL">SPECIAL REQUESTS</span><small data-i18n="OPTIONAL">OPTIONAL ADD-ONS</small></div>
+              <label class="special-check"><input type="checkbox" data-special="name"><span data-i18n="ADDNAME">ADD NAME</span><strong><b>+100</b><small>EGP / PC</small></strong></label>
+              <div class="special-extra" data-extra="name"><input type="text" data-special-input="name" maxlength="30" placeholder="Name to print"></div>
+              <label class="special-check"><input type="checkbox" data-special="text"><span data-i18n="CUSTOMTEXT">CUSTOM TEXT</span><strong><b>+75</b><small>EGP / PC</small></strong></label>
+              <div class="special-extra" data-extra="text"><input type="text" data-special-input="text" maxlength="60" placeholder="Text to print"></div>
+              <label class="special-check"><input type="checkbox" data-special="logo"><span data-i18n="CUSTOMLOGO">CUSTOM LOGO</span><strong><b>+200</b><small>EGP / PC</small></strong></label>
+              <div class="special-extra" data-extra="logo"><input type="text" data-special-input="logo" maxlength="60" placeholder="Logo / brand name"></div>
+            </div>
+            <button type="button" class="business-quote-btn wholesale-order-btn" data-wholesale-product="CORPORATE UNIFORM" data-min-qty="30">ORDER VIA WHATSAPP</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="wholesale-product">
+        <div class="business-product-image wholesale-image"><img src="assets/products/t-shirt/Joy Team Polo .png" alt="VERV Team and Custom Apparel" loading="lazy"></div>
+        <div class="wholesale-content">
+          <div><span class="product-category">BULK / 03</span><h4>Volunteer team / POLO SHIRT</h4><p>Custom apparel for teams, events and organizations.</p></div>
+          <div class="price-tiers">
+            <div class="price-tier"><span>30 — 50 PCS</span><strong>320 <small>EGP / PC</small></strong></div>
+            <div class="price-tier"><span>50 — 70 PCS</span><strong>290 <small>EGP / PC</small></strong></div>
+            <div class="price-tier"><span>70 — 100 PCS</span><strong>260 <small>EGP / PC</small></strong></div>
+            <div class="price-tier"><span>100+ PCS</span><strong>240 <small>EGP / PC</small></strong></div>
+          </div>
+          <div class="wholesale-order-box" data-wholesale-order>
+            <div class="wholesale-order-options">
+              <label><span>COLOR</span><select data-wholesale-color><option>Black</option><option>White</option><option>Beige</option><option>Turquoise</option><option>Custom</option></select></label>
+              <label><span>SIZE</span><select data-wholesale-size><option>S</option><option>M</option><option>L</option><option>XL</option><option>Mixed Sizes</option></select></label>
+              <label><span>QUANTITY</span><input data-wholesale-qty type="number" min="30" step="1" value="30" inputmode="numeric"></label>
+            </div>
+            <div class="special-request-box" data-special-requests>
+              <div class="special-request-head"><span data-i18n="SPECIAL">SPECIAL REQUESTS</span><small data-i18n="OPTIONAL">OPTIONAL ADD-ONS</small></div>
+              <label class="special-check"><input type="checkbox" data-special="name"><span data-i18n="ADDNAME">ADD NAME</span><strong><b>+100</b><small>EGP / PC</small></strong></label>
+              <div class="special-extra" data-extra="name"><input type="text" data-special-input="name" maxlength="30" placeholder="Name to print"></div>
+              <label class="special-check"><input type="checkbox" data-special="text"><span data-i18n="CUSTOMTEXT">CUSTOM TEXT</span><strong><b>+75</b><small>EGP / PC</small></strong></label>
+              <div class="special-extra" data-extra="text"><input type="text" data-special-input="text" maxlength="60" placeholder="Text to print"></div>
+              <label class="special-check"><input type="checkbox" data-special="logo"><span data-i18n="CUSTOMLOGO">CUSTOM LOGO</span><strong><b>+200</b><small>EGP / PC</small></strong></label>
+              <div class="special-extra" data-extra="logo"><input type="text" data-special-input="logo" maxlength="60" placeholder="Logo / brand name"></div>
+            </div>
+            <button type="button" class="business-quote-btn wholesale-order-btn" data-wholesale-product="TEAM / CUSTOM APPAREL" data-min-qty="30">ORDER VIA WHATSAPP</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="wholesale-note">
+      <span>+</span> 
+      <div><strong>CUSTOM ORDERS</strong><p>Need a specific design, color, branding or quantity? Talk to VERV and build the order around your needs.</p></div>
+    </div>
+  </div>
+
+  <div class="business-footer">
+    <div><span class="eyebrow">VERV BUSINESS</span><h3>READY TO MOVE?</h3></div>
+    <a href="#contact" class="btn business-main-cta">TALK TO VERV</a>
+  </div>
+</section>
+
+
+
+<section class="handshake-section" aria-label="VERV thank you handshake">
+  <div class="handshake-copy reveal">
+    <span class="eyebrow">VERV / CONNECTION</span>
+    <h2>THANK YOU<br><em>FOR THE ENERGY.</em></h2>
+    <p>Every order, message and move helps shape what VERV becomes next.</p>
+  </div>
+  <div class="handshake-art reveal" aria-hidden="true">
+    <svg viewBox="0 0 900 420" role="presentation">
+      <g class="handshake-lines">
+        <path pathLength="1" d="M52 290 C130 250 191 211 259 182 C291 168 322 170 350 190 L430 246 C449 259 474 258 489 243 L528 204 C542 190 566 188 584 200 L735 304"/>
+        <path pathLength="1" d="M118 247 L189 307 C207 322 230 322 247 307 L337 227"/>
+        <path pathLength="1" d="M188 208 C216 185 247 173 277 179 L356 217"/>
+        <path pathLength="1" d="M430 246 L509 307 C526 320 550 320 568 306 L655 235"/>
+        <path pathLength="1" d="M584 200 L666 155 C692 141 720 147 740 165 L850 267"/>
+        <path pathLength="1" d="M640 180 L703 224"/>
+        <path pathLength="1" d="M678 158 L739 205"/>
+        <path pathLength="1" d="M717 153 L777 197"/>
+        <path pathLength="1" d="M756 163 L815 211"/>
+        <path pathLength="1" d="M337 227 C360 204 382 188 404 182 C421 177 436 184 449 197 L489 243"/>
+        <path pathLength="1" d="M528 204 C507 188 487 175 466 170 C447 165 431 171 417 183"/>
+      </g>
+      <g class="handshake-accent"><path d="M74 316 H214"/><path d="M690 335 H826"/><circle cx="449" cy="260" r="4"/></g>
+    </svg>
+    <span class="handshake-label">MOVE TOGETHER / VERV</span>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="reveal">GET IN<br>TOUCH</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Name" required id="cname">
+    <input type="text" placeholder="Phone or Email" required id="ccontact">
+    <textarea placeholder="Message" id="cmsg"></textarea>
+    <button type="submit" class="btn">Send</button>
+  </form>
+
+  
+</section>
+
+<footer>
+  <a class="footer-logo" href="#top" aria-label="VERV home"><img src="assets/brand/verv-logo.png" alt="VERV"></a>
+  <div>
+    <span>WEAR THE ENERGY. © 2025</span>
+    <a href="#" id="footerInstagram" target="_blank" rel="noopener">Instagram</a>
+    <a href="#" id="footerEmail">Email</a>
+  </div>
+</footer>
+
+<script src="config.js"></script><script src="js/orders.js"></script><script src="js/checkout.js"></script>
+<script src="data/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/products.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/category-campaigns.js"></script>
+<script src="js/business-catalog.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/business.js"></script>
+<script>
+  document.getElementById('footerInstagram').href = VERV_CONFIG.INSTAGRAM_URL;
+  document.getElementById('footerEmail').href = 'mailto:vervofficial1@gmail.com';
+</script>
+</body>
+</html>

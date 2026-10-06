@@ -1,0 +1,57 @@
+/* ==========================================================
+   VERV — RESPONSIVE BREAKPOINTS
+   ========================================================== */
+
+@media(max-width:760px){
+  .statement{grid-template-columns:1fr}
+  .campaign-grid{flex-direction:column;align-items:center}
+  .cshot{margin:0 0 -10px}
+  .cshot--1{transform:rotate(-4deg) translateX(-16px)}
+  .cshot--2{transform:rotate(0) translateY(0);z-index:2}
+  .cshot--3{transform:rotate(3deg) translateX(16px)}
+  .cshot:hover{transform:translateY(-8px) scale(1.02)}
+  .product-layout{grid-template-columns:1fr;gap:32px}
+}
+
+@media(max-width:640px){
+  .navlinks .links{
+    position:fixed;top:0;right:0;height:100%;width:min(280px,80vw);
+    background:var(--bg2);border-left:1px solid var(--line);
+    flex-direction:column;align-items:flex-start;padding:90px 28px 28px;
+    transform:translateX(100%);transition:transform .3s ease;z-index:80;
+  }
+  .navlinks .links.open{transform:translateX(0)}
+  .navlinks .links a{margin:0 0 24px;font-size:16px}
+  #navToggle{display:block}
+}
+
+@media(max-width:480px){
+  .corner{font-size:9px;letter-spacing:.1em}
+  .corner-bl{bottom:24px;left:20px}
+  .corner-br,.corner-tr{right:20px}
+  .corner-br{bottom:24px}
+  .corner-tr{top:20px}
+}
+
+@media(max-width:760px){
+  .hero-wardrobe{right:50%;top:54%;width:58vw;height:62vh;transform:translate(50%,-50%);opacity:.34;}
+  .hero-content{z-index:4;max-width:100%;text-align:left;}
+  .hero-content .verv-mark{text-shadow:0 0 35px rgba(22,199,183,.12)}
+  .campaign-grid{gap:14px;perspective:none;}
+  .cshot,.cshot--1,.cshot--2,.cshot--3,.cshot:nth-child(4){width:calc(50% - 7px);flex:0 0 calc(50% - 7px);transform:none;margin:0;}
+  .cshot:hover,.cshot:focus-within{transform:translateY(-8px) scale(1.015);}
+  .grid{grid-template-columns:1fr 1fr;gap:14px;}
+  .card .card-body{padding-left:14px;padding-right:14px;}
+  .card .addbtn{margin-left:14px;width:calc(100% - 28px);}
+  .card .desc{min-height:0;}
+  .card-arrow{opacity:1;width:30px;height:30px;font-size:20px;}
+}
+@media(max-width:520px){
+  .hero-wardrobe{width:76vw;height:58vh;top:52%;opacity:.26;}
+  .grid{grid-template-columns:1fr;gap:18px;}
+  .card{max-width:520px;margin:0 auto;width:100%;}
+  .campaign-grid{display:grid;grid-template-columns:1fr 1fr;}
+  .cshot,.cshot--1,.cshot--2,.cshot--3,.cshot:nth-child(4){width:100%;}
+}
+
+@media(max-width:640px){.product-page-top{align-items:flex-start;flex-direction:column;gap:10px}.product-page{padding-top:34px}}
